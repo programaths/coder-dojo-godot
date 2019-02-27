@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Match.gd" type="Script" id=1]
+[ext_resource path="res://Card.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Card" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 220, 150 )
+
+[node name="Card17" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 220, 430.633 )
+
+[node name="Card7" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 220, 290.633 )
+
+[node name="Card2" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 320, 150 )
+
+[node name="Card18" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 318.589, 430.633 )
+
+[node name="Card8" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 320, 290.633 )
+
+[node name="Card3" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 420, 150 )
+
+[node name="Card20" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 420, 430.633 )
+
+[node name="Card10" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 422.008, 290.633 )
+
+[node name="Card13" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 720, 430.633 )
+
+[node name="Card4" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 520, 150.633 )
+
+[node name="Card19" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 520, 430.633 )
+
+[node name="Card9" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 520, 290.633 )
+
+[node name="Card14" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 720, 290.633 )
+
+[node name="Card5" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 620, 150.633 )
+
+[node name="Card16" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 620, 430.633 )
+
+[node name="Card6" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 620, 290.633 )
+
+[node name="Card15" parent="." groups=[
+"card",
+] instance=ExtResource( 2 )]
+position = Vector2( 720, 150 )
+

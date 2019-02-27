@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Card.gd" type="Script" id=1]
+[ext_resource path="res://cards.png" type="Texture" id=2]
+[ext_resource path="res://card-back.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 44.9597, 67.4911 )
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 1 )
+value = 12
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 4356, 0, 362, 542 )
+region_filter_clip = true
+
+[node name="cardBack" type="Sprite" parent="."]
+scale = Vector2( 0.250171, 0.250171 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="input_event" from="." to="." method="_on_Area2D_input_event"]
