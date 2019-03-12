@@ -2,12 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cards.png-70ee07a3c6dbd3cc75e07c12053ac952.stex"
+path="res://.import/Crate_Purple.png-52c151542943492671f54b60e51e0be6.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://cards.png"
-dest_files=[ "res://.import/cards.png-70ee07a3c6dbd3cc75e07c12053ac952.stex" ]
+source_file="res://sokoban/sprites/Crate_Purple.png"
+dest_files=[ "res://.import/Crate_Purple.png-52c151542943492671f54b60e51e0be6.stex" ]
 
 [params]
 

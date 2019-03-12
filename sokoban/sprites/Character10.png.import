@@ -2,12 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/card-back.png-0a4531f9bc2ef72b7520dfe4583521bc.stex"
+path="res://.import/Character10.png-7e1eaa38951497efa3594526c482c620.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://card-back.png"
-dest_files=[ "res://.import/card-back.png-0a4531f9bc2ef72b7520dfe4583521bc.stex" ]
+source_file="res://sokoban/sprites/Character10.png"
+dest_files=[ "res://.import/Character10.png-7e1eaa38951497efa3594526c482c620.stex" ]
 
 [params]
 

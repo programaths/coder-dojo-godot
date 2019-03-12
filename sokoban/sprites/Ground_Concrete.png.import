@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/Ground_Concrete.png-47752efe191ca139e643e4c269dce597.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://sokoban/sprites/Ground_Concrete.png"
+dest_files=[ "res://.import/Ground_Concrete.png-47752efe191ca139e643e4c269dce597.stex" ]
 
 [params]
 

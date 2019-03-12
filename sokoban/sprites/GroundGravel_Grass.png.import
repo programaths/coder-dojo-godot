@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/GroundGravel_Grass.png-7cafc37f4558d4089afea8fb88d838d7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://sokoban/sprites/GroundGravel_Grass.png"
+dest_files=[ "res://.import/GroundGravel_Grass.png-7cafc37f4558d4089afea8fb88d838d7.stex" ]
 
 [params]
 

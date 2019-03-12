@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/Character8.png-48de18bed0470861bf48224ad112e9f5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://sokoban/sprites/Character8.png"
+dest_files=[ "res://.import/Character8.png-48de18bed0470861bf48224ad112e9f5.stex" ]
 
 [params]
 

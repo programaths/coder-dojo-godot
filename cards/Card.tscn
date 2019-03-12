@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Card.gd" type="Script" id=1]
-[ext_resource path="res://cards.png" type="Texture" id=2]
-[ext_resource path="res://card-back.png" type="Texture" id=3]
+[ext_resource path="res://cards/Card.gd" type="Script" id=1]
+[ext_resource path="res://cards/cards.png" type="Texture" id=2]
+[ext_resource path="res://cards/card-back.png" type="Texture" id=3]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 44.9597, 67.4911 )
