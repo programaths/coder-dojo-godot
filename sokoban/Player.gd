@@ -1,10 +1,12 @@
 extends KinematicBody2D
 
 onready var tween = $Tween
+onready var anim_sprite = $AnimatedSprite
 
 var start=null 
 var end = null
 var t=0
+
 
 func try_move(delta,rel_vec:Vector2):
 	var other = move_and_collide(rel_vec,true,true,true)
@@ -32,13 +34,19 @@ func _process(delta):
 		return
 	if Input.is_action_pressed("ui_up"):
 		try_move(delta,Vector2(0,-64))
+		anim_sprite.play("up")
 		return
 	if Input.is_action_pressed("ui_down"):
 		try_move(delta,Vector2(0,64))
+		anim_sprite.play("down")
 		return
 	if Input.is_action_pressed("ui_left"):
 		try_move(delta,Vector2(-64,0))
+		anim_sprite.play("left")
 		return
 	if Input.is_action_pressed("ui_right"):
 		try_move(delta,Vector2(64,0))
+		anim_sprite.play("right")
 		return
+	anim_sprite.stop()
+	anim_sprite.frame=0
