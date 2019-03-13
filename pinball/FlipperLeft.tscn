@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://pinball/FlipperLeft.gd" type="Script" id=1]
+[ext_resource path="res://pinball/sprites/flipper_left.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 50.0333
+
+[sub_resource type="CircleShape2D" id=2]
+
+[node name="FlipperLeft" type="StaticBody2D"]
+position = Vector2( -0.647064, -1.29414 )
+collision_layer = 6
+collision_mask = 6
+script = ExtResource( 1 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+node_a = NodePath("..")
+node_b = NodePath("../Body")
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="."]
+position = Vector2( 232.297, 110.648 )
+rotation = 2.10287
+node_a = NodePath("..")
+node_b = NodePath("../Body")
+length = 160.0
+rest_length = 80.0
+stiffness = 64.0
+
+[node name="Body" type="RigidBody2D" parent="."]
+collision_layer = 6
+collision_mask = 6
+mass = 5.0
+
+[node name="Sprite" type="Sprite" parent="Body"]
+position = Vector2( 58.5596, 11.3237 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Body"]
+position = Vector2( 4.52946, 0.970596 )
+shape = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Body"]
+polygon = PoolVector2Array( 28.6784, -41.8225, 59.7376, -23.7046, 95.6499, 6.06047, 132.856, 41.9727, 161.651, 71.4142, 115.062, 69.1495, 66.2083, 64.9436, 20.9136, 58.4729, -17.9104, 44.561 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+

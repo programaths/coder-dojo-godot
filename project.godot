@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "RigidBody2D",
+"class": "Ball",
+"language": "GDScript",
+"path": "res://pinball/Ball.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "Crate",
 "language": "GDScript",
 "path": "res://sokoban/Crate.gd"
 } ]
 _global_script_class_icons={
+"Ball": "res://pinball/sprites/ball.png",
 "Crate": ""
 }
 

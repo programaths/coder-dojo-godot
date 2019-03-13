@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="PhysicsMaterial" id=1]
+absorbent = true
+
+[sub_resource type="CircleShape2D" id=2]
+
+[node name="StopFlipperLeft" type="StaticBody2D"]
+position = Vector2( 307.295, 600.913 )
+collision_layer = 4
+collision_mask = 4
+physics_material_override = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
