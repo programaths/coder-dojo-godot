@@ -28,3 +28,9 @@ Heavily use of physic engine and all available joints (groove, pin and dample).
 Shows also how to use collision layers.
 
 *Controls*: down to pull plunger, left and right for left and right flippers
+
+#### Shmup
+
+Heavily use of Paths2D, randf and collision layers. Uses an inherited scene for choreegraphy2 and 3.
+
+*Controls*: arrows to move, space to shoot.

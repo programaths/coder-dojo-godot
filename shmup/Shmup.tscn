@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://shmup/sprites/black.png" type="Texture" id=1]
+[ext_resource path="res://shmup/Background.gd" type="Script" id=2]
+[ext_resource path="res://shmup/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://shmup/GameController.gd" type="Script" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 579.296, 332.752 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 80, 1730, 900 )
+script = ExtResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 508.2, 510.109 )
+
+[node name="GameController" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="Timer" type="Timer" parent="GameController"]
+one_shot = true
+
+[connection signal="timeout" from="GameController/Timer" to="GameController" method="_on_Timer_timeout"]
