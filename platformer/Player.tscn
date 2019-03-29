@@ -1,0 +1,58 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://platformer/Player.gd" type="Script" id=1]
+[ext_resource path="res://platformer/sprites/platformChar_idle.png" type="Texture" id=2]
+[ext_resource path="res://platformer/sprites/platformChar_duck.png" type="Texture" id=3]
+[ext_resource path="res://platformer/sprites/platformChar_climb1.png" type="Texture" id=4]
+[ext_resource path="res://platformer/sprites/platformChar_climb2.png" type="Texture" id=5]
+[ext_resource path="res://platformer/sprites/platformChar_walk1.png" type="Texture" id=6]
+[ext_resource path="res://platformer/sprites/platformChar_walk2.png" type="Texture" id=7]
+[ext_resource path="res://platformer/sprites/platformChar_jump.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "duck",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "climb",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 54.3751, 69.4227 )
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.50639, 29.5686 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 1.80499, 27.9775 )
+current = true
+
