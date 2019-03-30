@@ -42,3 +42,7 @@ Very simple game which use an Animation player to handle "bonus block" and featu
 Player is fully animated.
 
 *Controls*: arrows to move, space to jump.
+
+#### Fifteen
+
+Fifteen game. Click a tile to move it to the free cell
