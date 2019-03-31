@@ -47,6 +47,10 @@ Player is fully animated.
 
 Fifteen game. Click a tile to move it to the free cell
 
+#### Minigolf
+
+Aim and click to "put" the ball
+
 ## TODO
 
  a pentamino puzzle, a match 3, Tetris and Golf 
