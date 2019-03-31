@@ -46,3 +46,9 @@ Player is fully animated.
 #### Fifteen
 
 Fifteen game. Click a tile to move it to the free cell
+
+## TODO
+
+ a pentamino puzzle, a match 3, Tetris and Golf 
+Then I would like to have a 3D rail shooter based on CSG (Constructed solid geometry).
+And a basic zelda like RPG.

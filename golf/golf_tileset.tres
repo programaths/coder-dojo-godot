@@ -1,0 +1,51 @@
+[gd_resource type="TileSet" load_steps=2 format=2]
+
+[ext_resource path="res://golf/sprites/Tileset.png" type="Texture" id=1]
+
+[resource]
+0/name = "B"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 896, 1216 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 54, Vector2( 0, 6 ), 48, Vector2( 0, 10 ), 432, Vector2( 0, 11 ), 438, Vector2( 0, 12 ), 54, Vector2( 1, 0 ), 216, Vector2( 1, 1 ), 443, Vector2( 1, 2 ), 54, Vector2( 1, 5 ), 432, Vector2( 1, 6 ), 446, Vector2( 1, 7 ), 54, Vector2( 1, 10 ), 504, Vector2( 1, 11 ), 511, Vector2( 1, 12 ), 63, Vector2( 1, 15 ), 48, Vector2( 1, 17 ), 48, Vector2( 2, 1 ), 504, Vector2( 2, 2 ), 63, Vector2( 2, 4 ), 144, Vector2( 2, 5 ), 506, Vector2( 2, 6 ), 511, Vector2( 2, 7 ), 191, Vector2( 2, 8 ), 18, Vector2( 2, 10 ), 216, Vector2( 2, 11 ), 219, Vector2( 2, 12 ), 27, Vector2( 2, 14 ), 144, Vector2( 2, 15 ), 442, Vector2( 2, 16 ), 438, Vector2( 2, 17 ), 190, Vector2( 2, 18 ), 18, Vector2( 3, 0 ), 432, Vector2( 3, 1 ), 254, Vector2( 3, 2 ), 27, Vector2( 3, 5 ), 216, Vector2( 3, 6 ), 251, Vector2( 3, 7 ), 27, Vector2( 3, 15 ), 504, Vector2( 3, 16 ), 511, Vector2( 3, 17 ), 63, Vector2( 4, 0 ), 216, Vector2( 4, 1 ), 27, Vector2( 4, 6 ), 24, Vector2( 4, 10 ), 48, Vector2( 4, 14 ), 144, Vector2( 4, 15 ), 250, Vector2( 4, 16 ), 219, Vector2( 4, 17 ), 187, Vector2( 4, 18 ), 18, Vector2( 5, 8 ), 144, Vector2( 5, 9 ), 434, Vector2( 5, 10 ), 62, Vector2( 5, 15 ), 24, Vector2( 5, 17 ), 24, Vector2( 6, 0 ), 48, Vector2( 6, 2 ), 48, Vector2( 6, 4 ), 176, Vector2( 6, 5 ), 146, Vector2( 6, 6 ), 50, Vector2( 6, 9 ), 248, Vector2( 6, 10 ), 155, Vector2( 6, 11 ), 18, Vector2( 7, 0 ), 184, Vector2( 7, 1 ), 146, Vector2( 7, 2 ), 58, Vector2( 7, 4 ), 56, Vector2( 7, 6 ), 56, Vector2( 7, 9 ), 24, Vector2( 7, 13 ), 432, Vector2( 7, 14 ), 54, Vector2( 7, 17 ), 16, Vector2( 8, 0 ), 24, Vector2( 8, 2 ), 24, Vector2( 8, 4 ), 152, Vector2( 8, 5 ), 146, Vector2( 8, 6 ), 26, Vector2( 8, 12 ), 432, Vector2( 8, 13 ), 510, Vector2( 8, 14 ), 447, Vector2( 8, 15 ), 54, Vector2( 9, 8 ), 48, Vector2( 9, 12 ), 216, Vector2( 9, 13 ), 507, Vector2( 9, 14 ), 255, Vector2( 9, 15 ), 27, Vector2( 9, 17 ), 255, Vector2( 9, 18 ), 507, Vector2( 10, 3 ), 144, Vector2( 10, 4 ), 178, Vector2( 10, 5 ), 18, Vector2( 10, 8 ), 440, Vector2( 10, 9 ), 182, Vector2( 10, 10 ), 18, Vector2( 10, 13 ), 216, Vector2( 10, 14 ), 27, Vector2( 10, 17 ), 447, Vector2( 10, 18 ), 510, Vector2( 11, 4 ), 56, Vector2( 11, 7 ), 144, Vector2( 11, 8 ), 218, Vector2( 11, 9 ), 59, Vector2( 11, 16 ), 48, Vector2( 12, 3 ), 144, Vector2( 12, 4 ), 154, Vector2( 12, 5 ), 18, Vector2( 12, 9 ), 24, Vector2( 12, 15 ), 144, Vector2( 12, 16 ), 186, Vector2( 12, 17 ), 18, Vector2( 13, 16 ), 24 ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 64, 64 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Tileset.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 256, 192, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Tileset.png 2"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 640, 0, 192, 128 )
+2/tile_mode = 2
+2/autotile/icon_coordinate = Vector2( 0, 0 )
+2/autotile/tile_size = Vector2( 64, 64 )
+2/autotile/spacing = 0
+2/autotile/occluder_map = [  ]
+2/autotile/navpoly_map = [  ]
+2/autotile/z_index_map = [  ]
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shapes = [  ]
+2/z_index = 0
+
