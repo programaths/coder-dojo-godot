@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "Crate",
 "language": "GDScript",
 "path": "res://sokoban/Crate.gd"
+}, {
+"base": "Area2D",
+"class": "Match3Tile",
+"language": "GDScript",
+"path": "res://match3/Tile.gd"
 } ]
 _global_script_class_icons={
 "Ball": "res://pinball/sprites/ball.png",
-"Crate": ""
+"Crate": "",
+"Match3Tile": ""
 }
 
 [application]

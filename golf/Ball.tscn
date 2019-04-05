@@ -18,4 +18,7 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
 [connection signal="input_event" from="." to="." method="_on_RigidBody2D_input_event"]

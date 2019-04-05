@@ -35,6 +35,7 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 
 
 [node name="Tile" parent="." instance=ExtResource( 2 )]
 position = Vector2( 256, 256 )
+letter = ""
 
 [node name="Tile2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 384, 256 )
