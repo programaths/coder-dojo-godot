@@ -51,8 +51,13 @@ Fifteen game. Click a tile to move it to the free cell
 
 Aim and click to "put" the ball
 
+#### Match3
+
+Click and drag tiles to "swap" them.
+There is a bug in that one, kudo if you find a solution to it:-p
+
 ## TODO
 
- a pentamino puzzle, a match 3, Tetris and Golf 
+ a pentamino puzzle, Tetris
 Then I would like to have a 3D rail shooter based on CSG (Constructed solid geometry).
 And a basic zelda like RPG.
