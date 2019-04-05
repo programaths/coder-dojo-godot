@@ -1,6 +1,8 @@
 # coder-dojo-godot
 Example project for Godot for Coder Dojo
 
+Demo video : https://www.youtube.com/watch?v=fghUre7XpV0
+
 ## What is gogot ?
 
 See: https://godotengine.org/
