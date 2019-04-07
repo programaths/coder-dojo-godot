@@ -1,0 +1,48 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=2]
+
+[ext_resource path="res://quadromino/sprites/O.png" type="Texture" id=1]
+[ext_resource path="res://quadromino/sprites/J.png" type="Texture" id=2]
+[ext_resource path="res://quadromino/sprites/I.png" type="Texture" id=3]
+[ext_resource path="res://quadromino/sprites/Z.png" type="Texture" id=4]
+[ext_resource path="res://quadromino/sprites/S.png" type="Texture" id=5]
+[ext_resource path="res://quadromino/sprites/L.png" type="Texture" id=6]
+[ext_resource path="res://quadromino/sprites/T.png" type="Texture" id=7]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "O",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "J",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "I",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Z",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "S",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "L",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "T",
+"speed": 5.0
+} ]
+

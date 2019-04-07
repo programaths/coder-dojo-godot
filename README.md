@@ -1,7 +1,7 @@
 # coder-dojo-godot
 Example project for Godot for Coder Dojo
 
-Demo video : https://www.youtube.com/watch?v=fghUre7XpV0
+Demo video : https://www.youtube.com/watch?v=yIHZFkv2POE
 
 ## What is gogot ?
 
@@ -47,19 +47,27 @@ Player is fully animated.
 
 #### Fifteen
 
-Fifteen game. Click a tile to move it to the free cell
+Fifteen game. 
+
+*Controls*: Click a tile to move it to the free cell
 
 #### Minigolf
 
-Aim and click to "put" the ball
+*Controls*: Aim and click to "put" the ball
 
 #### Match3
 
-Click and drag tiles to "swap" them.
+*Controls*:Click and drag tiles to "swap" them.
 There is a bug in that one, kudo if you find a solution to it:-p
+
+### Quatrominos
+
+A well known game with quatrominos.
+
+*controls*: A and E to rotate left and right. Arrows to move left and right and accellerate descent.
 
 ## TODO
 
- a pentamino puzzle, Tetris
+ a pentamino puzzle,
 Then I would like to have a 3D rail shooter based on CSG (Constructed solid geometry).
 And a basic zelda like RPG.

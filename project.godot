@@ -23,11 +23,17 @@ _global_script_classes=[ {
 "class": "Match3Tile",
 "language": "GDScript",
 "path": "res://match3/Tile.gd"
+}, {
+"base": "Node2D",
+"class": "QuadrominoPiece",
+"language": "GDScript",
+"path": "res://quadromino/QuadrominoPiece.gd"
 } ]
 _global_script_class_icons={
 "Ball": "res://pinball/sprites/ball.png",
 "Crate": "",
-"Match3Tile": ""
+"Match3Tile": "",
+"QuadrominoPiece": ""
 }
 
 [application]
@@ -45,6 +51,16 @@ shoot={
 golf={
 "deadzone": 0.5,
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+rotate_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"unicode":0,"echo":false,"script":null)
+ ]
+}
+rotate_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
  ]
 }
 
