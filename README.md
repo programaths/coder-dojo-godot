@@ -66,8 +66,14 @@ A well known game with quatrominos.
 
 *controls*: A and E to rotate left and right. Arrows to move left and right and accellerate descent.
 
+### Rail shooter ... without shots :-D
+
+A simple 3D games where you fly around obstacles in a straight line.
+(Like Starfox on SNES)
+
+*controls*: Move your mouse to move.
+
 ## TODO
 
  a pentamino puzzle,
-Then I would like to have a 3D rail shooter based on CSG (Constructed solid geometry).
 And a basic zelda like RPG.

@@ -1,0 +1,240 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://railshooter/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://railshooter/FallLeft.tscn" type="PackedScene" id=2]
+[ext_resource path="res://railshooter/FallRight.tscn" type="PackedScene" id=3]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.0117647, 0.47451, 0, 1 )
+
+[sub_resource type="PlaneMesh" id=1]
+material = SubResource( 2 )
+
+[sub_resource type="ProceduralSky" id=3]
+sky_top_color = Color( 0.117647, 0.929412, 0.94902, 1 )
+sky_horizon_color = Color( 0.780392, 0.901961, 0.996078, 1 )
+sky_curve = 0.0731027
+ground_bottom_color = Color( 0.054902, 0.372549, 0.0901961, 1 )
+ground_horizon_color = Color( 0.00784314, 0.0901961, 0.0117647, 1 )
+ground_curve = 0.069644
+sun_latitude = 50.48
+sun_longitude = -54.19
+sun_curve = 0.18025
+
+[sub_resource type="Environment" id=4]
+background_mode = 2
+background_sky = SubResource( 3 )
+background_color = Color( 0.772549, 0.6, 0.6, 1 )
+tonemap_mode = 3
+auto_exposure_enabled = true
+ss_reflections_enabled = true
+ssao_enabled = true
+ssao_light_affect = 1.0
+ssao_quality = 2
+dof_blur_far_enabled = true
+dof_blur_far_distance = 40.0
+dof_blur_far_quality = 2
+glow_enabled = true
+glow_bloom = 0.17
+
+[node name="RailShooter" type="Spatial"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -75.9465 )
+
+[node name="Position3D" type="Position3D" parent="Player"]
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 0, 1, -4 )
+
+[node name="InterpolatedCamera" type="InterpolatedCamera" parent="."]
+transform = Transform( -0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, -0.984808, 0, 0, -88.6342 )
+target = NodePath("../Player/Position3D")
+speed = 8.0
+enabled = true
+
+[node name="CSGCylinder" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.20246 )
+use_collision = true
+height = 12.0062
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.84157, 0, 7.20246 )
+use_collision = true
+height = 12.0062
+
+[node name="CSGCylinder3" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.84157, 0, 24.7744 )
+use_collision = true
+height = 12.0062
+
+[node name="CSGCylinder4" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.90524, 0, 24.7744 )
+use_collision = true
+height = 12.0062
+
+[node name="CSGCylinder5" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.13695, 0, 40.8739 )
+use_collision = true
+height = 12.0062
+
+[node name="CSGCylinder7" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1315, 0, 48.9938 )
+use_collision = true
+height = 12.0062
+
+[node name="CSGCylinder8" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.77946, 0, 48.9938 )
+use_collision = true
+height = 12.0062
+
+[node name="CSGCylinder6" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6142, 0, 40.8739 )
+use_collision = true
+height = 12.0062
+
+[node name="CSGMesh" type="CSGMesh" parent="."]
+transform = Transform( 183.35, 0, 0, 0, 1, 0, 0, 0, 424.122, 0, 0, 298.607 )
+mesh = SubResource( 1 )
+
+[node name="CSGTorus" type="CSGTorus" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0871558, 0.996195, 0, -0.996195, 0.0871558, -3.97337, 5.28774, 61.4344 )
+use_collision = true
+inner_radius = 3.0
+outer_radius = 4.0
+smooth_faces = false
+
+[node name="CSGTorus2" type="CSGTorus" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0871558, 0.996195, 0, -0.996195, 0.0871558, -3.97337, 5.28774, 72.6639 )
+use_collision = true
+inner_radius = 3.0
+outer_radius = 4.0
+smooth_faces = false
+
+[node name="CSGTorus3" type="CSGTorus" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0871558, 0.996195, 0, -0.996195, 0.0871558, -3.97337, 5.28774, 83.1657 )
+use_collision = true
+inner_radius = 3.0
+outer_radius = 4.0
+smooth_faces = false
+
+[node name="CSGTorus4" type="CSGTorus" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0871558, 0.996195, 0, -0.996195, 0.0871558, -3.97337, 9.46751, 94.7444 )
+use_collision = true
+inner_radius = 3.0
+outer_radius = 4.0
+smooth_faces = false
+
+[node name="CSGTorus5" type="CSGTorus" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0871558, 0.996195, 0, -0.996195, 0.0871558, -3.97337, 9.46751, 102.993 )
+use_collision = true
+inner_radius = 3.0
+outer_radius = 4.0
+smooth_faces = false
+
+[node name="CSGTorus6" type="CSGTorus" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0871558, 0.996195, 0, -0.996195, 0.0871558, -0.6537, 9.46751, 113.163 )
+use_collision = true
+inner_radius = 3.0
+outer_radius = 4.0
+smooth_faces = false
+
+[node name="CSGTorus7" type="CSGTorus" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0871558, 0.996195, 0, -0.996195, 0.0871558, -0.6537, 9.46751, 120.942 )
+use_collision = true
+inner_radius = 3.0
+outer_radius = 4.0
+smooth_faces = false
+
+[node name="CSGTorus8" type="CSGTorus" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0871558, 0.996195, 0, -0.996195, 0.0871558, -3.53679, 9.46751, 131.256 )
+use_collision = true
+inner_radius = 3.0
+outer_radius = 4.0
+smooth_faces = false
+
+[node name="CSGCylinder11" type="CSGCylinder" parent="."]
+transform = Transform( 6.70552e-008, 1, 0, -1, 6.70552e-008, 0, 0, 0, 1, -2.68494, 5.5446, 146.232 )
+snap = 0.2
+height = 12.683
+
+[node name="CSGCylinder10" type="CSGCylinder" parent="CSGCylinder11"]
+transform = Transform( 6.70552e-008, -1, 0, 1, 6.70552e-008, 0, 0, 0, 1, 2.97425, -6.10911, 0 )
+height = 6.22404
+
+[node name="CSGCylinder9" type="CSGCylinder" parent="CSGCylinder11"]
+transform = Transform( 6.70552e-008, -1, 0, 1, 6.70552e-008, 0, 0, 0, 1, 3.02449, 6.13134, 0 )
+height = 6.58248
+
+[node name="CSGSphere" type="CSGSphere" parent="CSGCylinder11"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.15352, 0 )
+rings = 12
+
+[node name="CSGSphere2" type="CSGSphere" parent="CSGCylinder11"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0143366, -6.11989, 0 )
+rings = 12
+
+[node name="CSGCylinder12" type="CSGCylinder" parent="."]
+transform = Transform( 6.70552e-008, 1, 0, -1, 6.70552e-008, 0, 0, 0, 1, 0.726269, 5.5446, 164.298 )
+snap = 0.2
+height = 12.683
+
+[node name="CSGCylinder10" type="CSGCylinder" parent="CSGCylinder12"]
+transform = Transform( 6.70552e-008, -1, 0, 1, 6.70552e-008, 0, 0, 0, 1, 2.97425, -6.10911, 0 )
+height = 6.22404
+
+[node name="CSGCylinder9" type="CSGCylinder" parent="CSGCylinder12"]
+transform = Transform( 6.70552e-008, -1, 0, 1, 6.70552e-008, 0, 0, 0, 1, 3.02449, 6.13134, 0 )
+height = 6.58248
+
+[node name="CSGSphere" type="CSGSphere" parent="CSGCylinder12"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.15352, 0 )
+rings = 12
+
+[node name="CSGSphere2" type="CSGSphere" parent="CSGCylinder12"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0143366, -6.11989, 0 )
+rings = 12
+
+[node name="CSGCylinder13" type="CSGCylinder" parent="."]
+transform = Transform( 6.70552e-008, 1, 0, -1, 6.70552e-008, 0, 0, 0, 1, -9.62587, 5.5446, 188.723 )
+snap = 0.2
+height = 12.683
+
+[node name="CSGCylinder10" type="CSGCylinder" parent="CSGCylinder13"]
+transform = Transform( 6.70552e-008, -1, 0, 1, 6.70552e-008, 0, 0, 0, 1, 2.97425, -6.10911, 0 )
+height = 6.22404
+
+[node name="CSGCylinder9" type="CSGCylinder" parent="CSGCylinder13"]
+transform = Transform( 6.70552e-008, -1, 0, 1, 6.70552e-008, 0, 0, 0, 1, 3.02449, 6.13134, 0 )
+height = 6.58248
+
+[node name="CSGSphere" type="CSGSphere" parent="CSGCylinder13"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.15352, 0 )
+rings = 12
+
+[node name="CSGSphere2" type="CSGSphere" parent="CSGCylinder13"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0143366, -6.11989, 0 )
+rings = 12
+
+[node name="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -9.78544, 0.187994, 207.92 )
+
+[node name="Spatial2" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.00194153, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.00194153, 18.265, 0.187994, 219.833 )
+
+[node name="Spatial3" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.00194153, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.00194153, -5.1783, 0.187994, 239.16 )
+
+[node name="Spatial4" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.00194153, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.00194153, -12.9565, 0.187994, 262.574 )
+
+[node name="FallRight" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 9.07583, 1.93694, 262.222 )
+
+[node name="FallRight2" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -32.5246, 1.93694, 222.314 )
+
+[node name="FallRight3" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 12.5622, 1.93694, 205.407 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 4 )
+
