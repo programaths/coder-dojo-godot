@@ -1,0 +1,109 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://pentominos/Pentominos.gd" type="Script" id=1]
+[ext_resource path="res://pentominos/sprites/wood-1456831_1920.jpg" type="Texture" id=2]
+[ext_resource path="res://pentominos/sprites/Bed1.png" type="Texture" id=3]
+[ext_resource path="res://pentominos/Detector.tscn" type="PackedScene" id=4]
+[ext_resource path="res://pentominos/Plus.tscn" type="PackedScene" id=5]
+[ext_resource path="res://pentominos/U.tscn" type="PackedScene" id=6]
+[ext_resource path="res://pentominos/F.tscn" type="PackedScene" id=7]
+[ext_resource path="res://pentominos/L.tscn" type="PackedScene" id=8]
+
+[node name="Pentominos" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 544, 274 )
+texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 563, 243 )
+texture = ExtResource( 3 )
+
+[node name="Detector" parent="." instance=ExtResource( 4 )]
+position = Vector2( 531, 179 )
+
+[node name="Detector2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 563, 179 )
+
+[node name="Detector3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 595, 179 )
+
+[node name="Detector4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 499, 211 )
+
+[node name="Detector5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 531, 211 )
+
+[node name="Detector6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 563, 211 )
+
+[node name="Detector7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 595, 211 )
+
+[node name="Detector8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 627, 211 )
+
+[node name="Detector9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 499, 243 )
+
+[node name="Detector10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 531, 243 )
+
+[node name="Detector11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 563, 243 )
+
+[node name="Detector12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 595, 243 )
+
+[node name="Detector13" parent="." instance=ExtResource( 4 )]
+position = Vector2( 499, 275 )
+
+[node name="Detector14" parent="." instance=ExtResource( 4 )]
+position = Vector2( 531, 275 )
+
+[node name="Detector15" parent="." instance=ExtResource( 4 )]
+position = Vector2( 563, 275 )
+
+[node name="Detector16" parent="." instance=ExtResource( 4 )]
+position = Vector2( 595, 275 )
+
+[node name="Detector17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 499, 307 )
+
+[node name="Detector18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 531, 307 )
+
+[node name="Detector19" parent="." instance=ExtResource( 4 )]
+position = Vector2( 563, 307 )
+
+[node name="Detector20" parent="." instance=ExtResource( 4 )]
+position = Vector2( 595, 307 )
+
+[node name="WinnerDialog" type="AcceptDialog" parent="."]
+margin_left = 448.0
+margin_top = 224.0
+margin_right = 531.0
+margin_bottom = 282.0
+window_title = "Bravo!"
+
+[node name="Label2" type="Label" parent="WinnerDialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "You WIN !"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="Plus" parent="." instance=ExtResource( 5 )]
+position = Vector2( 96, 160 )
+
+[node name="U" parent="." instance=ExtResource( 6 )]
+position = Vector2( 224, 352 )
+
+[node name="F" parent="." instance=ExtResource( 7 )]
+position = Vector2( 224, 192 )
+
+[node name="L" parent="." instance=ExtResource( 8 )]
+position = Vector2( 128, 288 )
+

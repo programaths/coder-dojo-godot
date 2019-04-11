@@ -73,7 +73,14 @@ A simple 3D games where you fly around obstacles in a straight line.
 
 *controls*: Move your mouse to move.
 
+### Pentominoes
+
+A simple block puzzle game.
+
+This game features drag & drop system and scene inheritence.
+
+*controls*: Drag & drop with mouse, right click when grabbing to rotate.
+
 ## TODO
 
- a pentamino puzzle,
 And a basic zelda like RPG.
