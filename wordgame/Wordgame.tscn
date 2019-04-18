@@ -1,0 +1,264 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://wordgame/Wordgame.gd" type="Script" id=1]
+[ext_resource path="res://wordgame/Board.gd" type="Script" id=2]
+[ext_resource path="res://wordgame/LetterTile.tscn" type="PackedScene" id=3]
+
+[node name="WordGame" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Board" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="LetterTile" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 64, 64 )
+letter = "B"
+
+[node name="LetterTile27" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 64, 256 )
+letter = "S"
+
+[node name="LetterTile44" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 64, 448 )
+letter = "A"
+
+[node name="LetterTile11" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 64, 160 )
+letter = "A"
+
+[node name="LetterTile25" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 64, 352 )
+letter = "S"
+
+[node name="LetterTile40" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 64, 544 )
+letter = "A"
+
+[node name="LetterTile5" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 448, 64 )
+letter = "U"
+
+[node name="LetterTile32" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 448, 256 )
+letter = "E"
+
+[node name="LetterTile41" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 448, 448 )
+letter = "N"
+
+[node name="LetterTile16" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 448, 160 )
+letter = "A"
+
+[node name="LetterTile20" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 448, 352 )
+letter = "O"
+
+[node name="LetterTile36" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 448, 544 )
+letter = "A"
+
+[node name="LetterTile3" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 256, 64 )
+letter = "C"
+
+[node name="LetterTile29" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 256, 256 )
+letter = "L"
+
+[node name="LetterTile48" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 256, 448 )
+letter = "A"
+
+[node name="LetterTile13" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 256, 160 )
+letter = "B"
+
+[node name="LetterTile24" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 256, 352 )
+
+[node name="LetterTile47" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 256, 544 )
+letter = "A"
+
+[node name="LetterTile7" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 544, 64 )
+letter = "B"
+
+[node name="LetterTile22" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 544, 256 )
+letter = "R"
+
+[node name="LetterTile34" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 544, 448 )
+letter = "A"
+
+[node name="LetterTile10" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 544, 160 )
+letter = "A"
+
+[node name="LetterTile18" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 544, 352 )
+letter = "A"
+
+[node name="LetterTile38" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 544, 544 )
+letter = "H"
+
+[node name="LetterTile2" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 160, 64 )
+letter = "A"
+
+[node name="LetterTile28" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 160, 256 )
+
+[node name="LetterTile43" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 160, 448 )
+letter = "E"
+
+[node name="LetterTile12" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 160, 160 )
+letter = "R"
+
+[node name="LetterTile26" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 160, 352 )
+letter = "N"
+
+[node name="LetterTile39" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 160, 544 )
+letter = "A"
+
+[node name="LetterTile6" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 736, 64 )
+letter = "C"
+
+[node name="LetterTile31" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 736, 256 )
+letter = "A"
+
+[node name="LetterTile46" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 736, 448 )
+letter = "L"
+
+[node name="LetterTile15" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 736, 160 )
+letter = "T"
+
+[node name="LetterTile17" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 736, 352 )
+letter = "N"
+
+[node name="LetterTile37" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 736, 544 )
+letter = "Y"
+
+[node name="LetterTile4" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 352, 64 )
+letter = "L"
+
+[node name="LetterTile30" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 352, 256 )
+letter = "V"
+
+[node name="LetterTile45" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 352, 448 )
+letter = "E"
+
+[node name="LetterTile14" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 352, 160 )
+letter = "A"
+
+[node name="LetterTile19" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 352, 352 )
+letter = "A"
+
+[node name="LetterTile33" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 352, 544 )
+letter = "G"
+
+[node name="LetterTile8" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 640, 64 )
+letter = "A"
+
+[node name="LetterTile21" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 640, 256 )
+letter = "R"
+
+[node name="LetterTile35" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 640, 448 )
+letter = "G"
+
+[node name="LetterTile9" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 640, 160 )
+letter = "E"
+
+[node name="LetterTile23" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 640, 352 )
+
+[node name="LetterTile42" parent="Board" instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 640, 544 )
+letter = "P"
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -214.0
+
+[node name="ItemList" type="ItemList" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 207.0
+margin_bottom = 593.0
+rect_min_size = Vector2( 200, 0 )
+rect_clip_content = false
+items = [ "BARB", null, false, "CLUB", null, false, "BRASS", null, false, "SILVER", null, false, "AEON", null, false, "VAIN", null, false, "LINE", null, false, "BACTERIA", null, false, "RAIN", null, false, "ANAGLYPH", null, false, "PHAGE", null, false ]
+
