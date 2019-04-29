@@ -20,6 +20,11 @@ _global_script_classes=[ {
 "path": "res://sokoban/Crate.gd"
 }, {
 "base": "Area2D",
+"class": "LetterTile",
+"language": "GDScript",
+"path": "res://wordgame/LetterTile.gd"
+}, {
+"base": "Area2D",
 "class": "Match3Tile",
 "language": "GDScript",
 "path": "res://match3/Tile.gd"
@@ -32,6 +37,7 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Ball": "res://pinball/sprites/ball.png",
 "Crate": "",
+"LetterTile": "res://wordgame/sprites/letter_A.png",
 "Match3Tile": "",
 "QuadrominoPiece": ""
 }

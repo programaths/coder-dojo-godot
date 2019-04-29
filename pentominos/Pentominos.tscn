@@ -90,6 +90,10 @@ window_title = "Bravo!"
 [node name="Label2" type="Label" parent="WinnerDialog"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -36.0
 text = "You WIN !"
 align = 1
 valign = 1

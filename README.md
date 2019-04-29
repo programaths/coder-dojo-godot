@@ -81,6 +81,12 @@ This game features drag & drop system and scene inheritence.
 
 *controls*: Drag & drop with mouse, right click when grabbing to rotate.
 
+### Word finder
+
+Drag the mouse over the tiles to compose words on the right.
+
+*controls*: Drag mouse over tiles
+
 ## TODO
 
 And a basic zelda like RPG.
